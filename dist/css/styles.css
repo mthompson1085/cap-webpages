@@ -10285,8 +10285,8 @@ header.event h1 {
 }
 
 .serv {
-  height: 25vh;
-  width: 35vh;
+  height: 30vh;
+  width: 42vh;
 }
 
 .stitle {
@@ -10298,6 +10298,15 @@ header.event h1 {
 .logohead {
   height: 12vh;
   width: 15vw;
+}
+
+.webinar {
+  background-color: #0c9fcc;
+  color: white;
+}
+
+.webwhite {
+  color: white;
 }
 
 .text-white-75 {
