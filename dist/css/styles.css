@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: rgba(1, 28, 54, 0.781);
+  --blue: #0508d4;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -10096,7 +10096,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(1, 28, 54, 0.581) 0%, rgba(1, 28, 54, 0.581) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(5, 8, 212, 0.8) 0%, rgba(5, 8, 212, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10164,7 +10164,7 @@ header.masthead h1 {
 header.about {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(1, 28, 54, 0.581) 0%, rgba(1, 28, 54, 0.581) 100%), url("../assets/img/about-header.jpg");
+  background: linear-gradient(to bottom, rgba(5, 8, 212, 0.8) 0%, rgba(5, 8, 212, 0.8) 100%), url("../assets/img/about-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10196,7 +10196,7 @@ header.about h1 {
 header.service {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(1, 28, 54, 0.581) 0%, rgba(1, 28, 54, 0.581) 100%), url("../assets/img/service-header.jpg");
+  background: linear-gradient(to bottom, rgba(5, 8, 212, 0.8) 0%, rgba(5, 8, 212, 0.8) 100%), url("../assets/img/service-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10228,7 +10228,7 @@ header.service h1 {
 header.event {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(1, 28, 54, 0.581) 0%, rgba(1, 28, 54, 0.581) 100%), url("../assets/img/event-header.jpg");
+  background: linear-gradient(to bottom, rgba(5, 8, 212, 0.8) 0%, rgba(5, 8, 212, 0.8) 100%), url("../assets/img/event-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
