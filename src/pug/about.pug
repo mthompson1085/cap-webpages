@@ -17,6 +17,13 @@ html(lang="en")
     link(href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet")
     // Core theme CSS (includes Bootstrap)
     link(href="css/styles.css" rel="stylesheet")
+    // Global site tag (gtag.js) - Google Analytics
+    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-178820975-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-178820975-1');
   body#page-top
     // Navigation
     nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
@@ -46,7 +53,7 @@ html(lang="en")
             hr.divider.my-4
           .col-lg-8.align-self-baseline
             p.text-white-75.font-weight-light.mb-5
-              | Having over 50 years of combined higher education experience, we have seen it all.  We are a group of professionals that are dedicated to you and your family’s financial success. Many times college students select a college without having all the information needed make the best financial decision. This decision point can have a rippling effect for years to come, often times diminishing the overall financial health of the family.
+              | Having over 50 years of combined higher education experience, we have seen it all. We are a group of professionals that are dedicated to you and your family’s financial success. Many times college students select a college without having all the information needed make the best financial decision. This decision point can have a rippling effect for years to come, often times diminishing the overall financial health of the family.
             p.text-white-75.font-weight-light.mb-5
               | At College CAP, we developed a model that will provide guidance to help a family truly understand what they can afford to pay for college. Our system will guide you through the process from start to finish to find you the best quality education for your budget.
     br
@@ -71,7 +78,7 @@ html(lang="en")
                   .project-name Founding Partner
                   br
                   p.float-right
-                    | Bill has over 15 years of experience in the higher education industry, specifically in financial services across varying institutions.  Having seen first-hand the mistakes that many ill-informed students and families have made, and is determined to be an advocate for the student.  Bill has worked with many families and enjoys seeing families make strong financial decisions based on actual data.
+                    | Bill has over 15 years of experience in the higher education industry, specifically in financial services across varying institutions. Having seen first-hand the mistakes that many ill-informed students and families have made, and is determined to be an advocate for the student. Bill has worked with many families and enjoys seeing families make strong financial decisions based on actual data.
     br
     footer.bg-light.py-5
       .container
