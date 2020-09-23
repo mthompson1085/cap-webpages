@@ -27,14 +27,22 @@
         height: 30vh;
         width: 42vh;
         margin: 25px;
+        justify-content: center;
         }
 .stitle {
           text-justify: center;
           position: center;
           text-align: center;
-          color: orange;
+          color: blue;
           font-weight: bolder;
         }
+.stitlepara {
+           text-justify: center;
+           position: center;
+           text-align: center;
+           color:orange;
+           font-weight: bolder;
+}
         
 .logohead {
           height: 12vh;
@@ -47,3 +55,33 @@
 .webwhite {
           color: white;
         }
+.flex-grid {
+          display: flex;
+          justify-content: space-between;
+        }
+.flex-grid.col {
+          width: 100%;
+        }
+.img {
+  justify-content: center;
+}
+        
+    @media (max-width: 400px) {
+          .flex-grid {
+            display: block;
+            .col {
+              width: 100%;
+              margin: 0 0 10px 0;
+            }
+          }
+        }
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          padding: 20px;
+        }
+        .flex-grid { 
+          margin: 0 0 20px 0;
+        }
+      
