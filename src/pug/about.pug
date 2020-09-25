@@ -21,7 +21,9 @@ html(lang="en")
     script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-178820975-1")
     script.
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+      dataLayer.push(arguments);
+      }
       gtag('js', new Date());
       gtag('config', 'UA-178820975-1');
   body#page-top
@@ -61,7 +63,7 @@ html(lang="en")
       #portfolio
         .container-fluid.p-0
           .row
-            .col-lg-6
+            .col-lg-5
               a.portfolio-box(href="assets/img/portfolio/fullsize/ph.jpg")
                 img.img-fluid.img-height(src="assets/img/portfolio/fullsize/ph.jpg" alt="")
                 .portfolio-box-caption
@@ -69,8 +71,9 @@ html(lang="en")
                   .project-name Founding Partner
                   br
                   p.float-right
-                    | Paul is on a mission to help families navigate and make a better decision about college. With more than 25 years of financial aid, enrollment management and student lending experience serving in a variety of leadership roles at the University of New England, Bentley University, Lesley University and JP Morgan Chase, Paul has helped thousands of students successfully through the college process. In his different capacities, Paul has a deep understanding of enrollment management and financial aid strategies commonly used in the industry.
-            .col-lg-6
+                    | Paul is on a mission to help families navigate and make a better decision about college. With more than 25 years of financial aid, enrollment management and student lending experience serving in a variety of leadership roles at Bentley University, Lesley University and JP Morgan Chase, Paul has helped thousands of students successfully through the college process. In his different capacities, Paul has a deep understanding of enrollment management and financial aid strategies commonly used in the industry.
+            .col-lg-2  
+            .col-lg-5
               a.portfolio-box(href="assets/img/portfolio/fullsize/mt.jpg")
                 img.img-fluid.img-height(src="assets/img/portfolio/fullsize/mt.jpg" alt="")
                 .portfolio-box-caption
