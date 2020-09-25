@@ -13,6 +13,12 @@
        height: 100vh;
        width: 50vw;
      }
+     @media(max-width: 992px) {
+      .img-height{
+        width: 100%;
+      }
+        }
+      
     
 .blk-border{
        border-color: orange;
