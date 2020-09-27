@@ -10360,6 +10360,12 @@ body {
   margin: 0 0 20px 0;
 }
 
+.webpromo {
+  width: 75vw;
+  height: 100vh;
+  justify-content: center;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
