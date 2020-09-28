@@ -10361,8 +10361,8 @@ body {
 }
 
 .webpromo {
-  width: 75vw;
-  height: 100vh;
+  width: 60vw;
+  height: 80vh;
   justify-content: center;
 }
 
@@ -10372,6 +10372,19 @@ body {
     height: 30vh;
   }
 }
+.webinar h2 {
+  justify-content: center;
+}
+.webinar p {
+  justify-content: center;
+}
+.webinar div {
+  justify-content: center;
+}
+.webinar img {
+  justify-content: center;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
