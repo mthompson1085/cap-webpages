@@ -115,3 +115,10 @@
     justify-content: center;
   }
 }
+
+@media(max-width: 992px) {
+  .tutorial{
+    width: 60%;
+    height: 30vh;
+  } 
+}
