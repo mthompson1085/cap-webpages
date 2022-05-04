@@ -38,6 +38,7 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-creative.git"
     },
     "dependencies": {
+        "@formspree/react": "^2.2.4",
         "bootstrap": "4.5.0"
     },
     "devDependencies": {
