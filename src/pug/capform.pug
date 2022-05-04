@@ -1,4 +1,5 @@
 
+doctype html
 html(lang='US-en')
   head
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -26,6 +27,12 @@ html(lang='US-en')
             .form-group
               label  State of Residence 
               input.form-control(type='text', name='state', required='')
+            .form-group
+              label  County 
+              input.form-control(type='text', name='county', required='')
+            .form-group
+              label  Primary Contact Email Address 
+              input.form-control(type='email', name='email', required='')
             h2 Family Information 
             .form-group
               label  Age of Oldest Parent 
