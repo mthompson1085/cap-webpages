@@ -98,60 +98,47 @@
                         </div>
                         <h2>Family Financial Goals for 2022</h2>
                         <div>
-                            <div>
-                            <label>Annual Family Savings Goal?</label>
-                            <div class="slidecontainer1">
-                            <input type="range" min="1" max="10000" value="500" class="slider" id="savingsgoal">
-                            <p>Value: $ <span id="demo"></span></p>
-                            </div>
-                            <script>
-                                var slider = document.getElementById("savingsgoal");
-                                var output = document.getElementById("demo");
-                                output.innerHTML = slider.value;
-                                
-                                slider.oninput = function() {
-                                  output.innerHTML = this.value;
-                                }
-                                </script>
+
+                            <div class="form-group">
+                                <label> Annual Family Savings Goal? </label>
+                                <p>How much would you like to save in 2022</p>
+                                <input type="number" name="familysavings" class="form-control" required>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                            <label>Annual Family Retirement Savings Goal?</label>
-                            <div class="slidecontainer1">
-                            <input type="range" min="1" max="10000" value="500" class="slider" id="savingsgoal">
-                            <p>Value: $ <span id="demo"></span></p>
-                            </div>
-                            <script>
-                                var slider = document.getElementById("retirementgoal");
-                                var output = document.getElementById("smart");
-                                output.innerHTML = slider.value;
-                                
-                                slider.oninput = function() {
-                                  output.innerHTML = this.value;
-                                }
-                                </script>
-                            </div>
+                        <div class="form-group">
+                            <label> Annual Family Retirement Savings Goal?</label>
+                            <input type="number" name="parentretirement" class="form-control" required>
                         </div>
-        
-                        <div>
-                            <label for="customRange3">Annual Family Investments Goal</label>
+
+                        <div class="form-group">
+                            <label> Annual Family Investment</label>
                             <p>Family investments in equities, real estate etc., this year</p>
-                            <div class="slidecontainer">
+                            <input type="number" name="parentschecking" class="form-control" required>
+                        </div>
+
+
+
+                        <div>
+                            <label for="customRange3"> <div class="form-group">
+                            <label> Total Parents Cash, Checking and Savings Balance? </label>
+                            <input type="number" name="parentschecking" class="form-control" required>
+                        </div></label>
+                            <p>Family investments in equities, real estate etc., this year</p>
+                            <div class="form-group">
                                   <input type="range" min="1" max="1000" 
                                   value="50" class="slider" id="myRange">   
                             </div>
                         </div>
                         <div>
-                            <label for="customRange3">Annual Family College Savings Goal?  </label>
-                            <div class="slidecontainer">
+                            <label></label> Annual Family College Savings Goal? label>
+                            <div class="form-group">
                                   <input type="range" min="1" max="1000" 
                                   value="50" class="slider" id="myRange">   
                             </div>
                         </div>
                         <h2> Family Expenses </h2>
                         <div>
-                            <label for="customRange3">Current Annual Car Payments?  </label>
+                            <label for="form-group">Current Annual Car Payments?  </label>
                             <p> Includes Auto Lease and Loan Payments. </p>
                             <div class="slidecontainer">
                                   <input type="range" min="1" max="1000" 

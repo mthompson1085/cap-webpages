@@ -1,6 +1,7 @@
-doctype html
 html(lang='US-en')
   head
+  body
+    | !Doctype html&gt;
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title  Sign Up
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
@@ -8,7 +9,6 @@ html(lang='US-en')
     link(rel='stylesheet', href='style.css')
     script(src='slider.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
-  body
     .container
       .row
         .col-md-12
@@ -82,47 +82,33 @@ html(lang='US-en')
               input.form-control(type='number', name='parentbusiness', required='')
             h2 Family Financial Goals for 2022
             div
-              div
-                label Annual Family Savings Goal?
-                .slidecontainer1
-                  input#savingsgoal.slider(type='range', min='1', max='10000', value='500')
-                  p
-                    | Value: $ 
-                    span#demo
-                script.
-                  var slider = document.getElementById("savingsgoal");
-                  var output = document.getElementById("demo");
-                  output.innerHTML = slider.value;
-                  slider.oninput = function() {
-                  output.innerHTML = this.value;
-                  }
-            div
-              div
-                label Annual Family Retirement Savings Goal?
-                .slidecontainer1
-                  input#savingsgoal.slider(type='range', min='1', max='10000', value='500')
-                  p
-                    | Value: $ 
-                    span#demo
-                script.
-                  var slider = document.getElementById("retirementgoal");
-                  var output = document.getElementById("smart");
-                  output.innerHTML = slider.value;
-                  slider.oninput = function() {
-                  output.innerHTML = this.value;
-                  }
-            div
-              label(for='customRange3') Annual Family Investments Goal
+              .form-group
+                label  Annual Family Savings Goal? 
+                p How much would you like to save in 2022
+                input.form-control(type='number', name='familysavings', required='')
+            .form-group
+              label  Annual Family Retirement Savings Goal?
+              input.form-control(type='number', name='parentretirement', required='')
+            .form-group
+              label  Annual Family Investment
               p Family investments in equities, real estate etc., this year
-              .slidecontainer
+              input.form-control(type='number', name='parentschecking', required='')
+            div
+              label(for='customRange3')
+                .form-group
+                  label  Total Parents Cash, Checking and Savings Balance? 
+                  input.form-control(type='number', name='parentschecking', required='')
+              p Family investments in equities, real estate etc., this year
+              .form-group
                 input#myRange.slider(type='range', min='1', max='1000', value='50')
             div
-              label(for='customRange3') Annual Family College Savings Goal?  
-              .slidecontainer
+              label
+              |  Annual Family College Savings Goal? label&gt;
+              .form-group
                 input#myRange.slider(type='range', min='1', max='1000', value='50')
             h2  Family Expenses 
             div
-              label(for='customRange3') Current Annual Car Payments?  
+              label(for='form-group') Current Annual Car Payments?  
               p  Includes Auto Lease and Loan Payments. 
               .slidecontainer
                 input#myRange.slider(type='range', min='1', max='1000', value='50')
