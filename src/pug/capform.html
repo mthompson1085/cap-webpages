@@ -1,0 +1,230 @@
+<!Doctype html>
+<html lang="US-en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Sign Up</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="style.css">
+        <script src="slider.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> CAP Assessment Form </h1>
+                    <h2>Student Information </h2>
+                    <p>Please complete this form to the best of your ability.  Providing accurate information will lead to a more realistic projection.</p>
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label> Parent Name </label>
+                            <input type="text" name="parentname" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Student Name </label>
+                            <input type="text" name="studentname" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> State of Residence </label>
+                            <input type="text" name="state" class="form-control" required>
+                        </div>
+                        <h2>Family Information </h2>
+                        <div class="form-group">
+                            <label> Age of Oldest Parent </label>
+                            <input type="number" name="confirm_password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> How many people live in the parents’ household, including parents? </label>
+                            <input type="number" name="hhsize" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> How many people in the students’ household, including the student will be in college during the 2022-2023 school year? </label>
+                            <input type="number" name="numincollege" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> How many people in the students’ household, NOT including the student, will be in college during the same undergraduate years? </label>
+                            <input type="number" name="overlapcollege" class="form-control" required>
+                        </div>
+                        <h2> Family Income and Assets </h2>
+                        <div class="form-group">
+                            <label> Student Income in 2020 Tax Year? </label>
+                            <input type="number" name="studentincome" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Parent 1 Income in 2020 Tax Year? </label>
+                            <input type="number" name="p1income" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Parent 2 Income in 2020 Tax Year? </label>
+                            <input type="number" name="p2income" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Parent Combined Untaxed Income in 2020 Tax Year?</label>
+                            <p>Please include Child Support Received if Applicable</p>
+                            <input type="number" name="untaxedincome" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Child Support Parents Paid in 2020 Tax Year? </label>
+                            <input type="number" name="supportpaid" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Total Student Cash, Checking and Savings Balance? </label>
+                            <input type="number" name="studentchecking" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Total Student Investment Net Worth </label>
+                            <p>If negative enter 0</p>
+                            <input type="number" name="studentinvestment" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>** Total Student Business / Farm Net Worth?  </label>
+                            <p>Applies to Businesses employing >100</p>
+                            <input type="number" name="studentbusiness" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Total Parents Cash, Checking and Savings Balance? </label>
+                            <input type="number" name="parentschecking" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Total Parent Investment Net Worth </label>
+                            <p>If negative enter 0</p>
+                            <input type="number" name="parentinvestment" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Total Parent Business / Farm Net Worth?  </label>
+                            <p>Applies to Businesses employing >100</p>
+                            <input type="number" name="parentbusiness" class="form-control" required>
+                        </div>
+                        <h2>Family Financial Goals for 2022</h2>
+                        <div>
+                            <div>
+                            <label>Annual Family Savings Goal?</label>
+                            <div class="slidecontainer1">
+                            <input type="range" min="1" max="10000" value="500" class="slider" id="savingsgoal">
+                            <p>Value: $ <span id="demo"></span></p>
+                            </div>
+                            <script>
+                                var slider = document.getElementById("savingsgoal");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value;
+                                
+                                slider.oninput = function() {
+                                  output.innerHTML = this.value;
+                                }
+                                </script>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                            <label>Annual Family Retirement Savings Goal?</label>
+                            <div class="slidecontainer1">
+                            <input type="range" min="1" max="10000" value="500" class="slider" id="savingsgoal">
+                            <p>Value: $ <span id="demo"></span></p>
+                            </div>
+                            <script>
+                                var slider = document.getElementById("retirementgoal");
+                                var output = document.getElementById("smart");
+                                output.innerHTML = slider.value;
+                                
+                                slider.oninput = function() {
+                                  output.innerHTML = this.value;
+                                }
+                                </script>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <label for="customRange3">Annual Family Investments Goal</label>
+                            <p>Family investments in equities, real estate etc., this year</p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Annual Family College Savings Goal?  </label>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <h2> Family Expenses </h2>
+                        <div>
+                            <label for="customRange3">Current Annual Car Payments?  </label>
+                            <p> Includes Auto Lease and Loan Payments. </p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Current Annual Mortgage/Rent Payment?  </label>
+                            <p> Includes Mortgage and Rent Payments. </p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Current Annual Insurance Premiums?  </label>
+                            <p> Includes Medical, Home, Renters, Auto and Life Insurance, etc.</p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Current Annual Debt Payments?  </label>
+                            <p> Includes revolving or monthly payments to credit cards, personal loans, loan consolidation/repayment, Federal PLUS loans for older siblings, etc., not factored into another Family Expense category.</p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Current Annual Food Expenditure? </label>
+                            <p>Includes grocery, restaurants, delivery, take out and warehouse memberships.</p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Current Annual Utilities Expenditure?</label>
+                            <p>Includes electricity, water, heating fuel, cell phone plans, Wi-Fi , satellite or cable connectivity and any subscription service (NETFLIX, AppleTV, etc.)</p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Current Annual Transportation Expenditure?</label>
+                            <p>Includes gasoline, road tolls, ride-shares, public transportation, parking, snow removal, licensing, registration and car maintenance.</p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Current Annual Care/Tuition Expenditure?</label>
+                            <p>Includes Daycare, Eldercare, School or Course Work, Tuition and fees.</p>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <div>
+                            <label for="customRange3">Current Annual Entertainment and Vacation Expenditures</label>
+                            <div class="slidecontainer">
+                                  <input type="range" min="1" max="1000" 
+                                  value="50" class="slider" id="myRange">   
+                            </div>
+                        </div>
+                        <p>Already have an account?<a href="login.php">  Login Here</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
