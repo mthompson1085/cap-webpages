@@ -1,7 +1,6 @@
+
 html(lang='US-en')
   head
-  body
-    | !Doctype html&gt;
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title  Sign Up
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
@@ -9,6 +8,7 @@ html(lang='US-en')
     link(rel='stylesheet', href='style.css')
     script(src='slider.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+  body
     .container
       .row
         .col-md-12
@@ -92,68 +92,53 @@ html(lang='US-en')
             .form-group
               label  Annual Family Investment
               p Family investments in equities, real estate etc., this year
+              input.form-control(type='number', name='parentinvestment', required='')
+            .form-group
+              label  Total Parents Cash, Checking and Savings Balance?
               input.form-control(type='number', name='parentschecking', required='')
-            div
-              label(for='customRange3')
-                .form-group
-                  label  Total Parents Cash, Checking and Savings Balance? 
-                  input.form-control(type='number', name='parentschecking', required='')
-              p Family investments in equities, real estate etc., this year
-              .form-group
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label
-              |  Annual Family College Savings Goal? label&gt;
-              .form-group
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
+            .form-group
+              label  Annual Family College Savings Goal? 
+              input.form-control(type='number', name='collegesavings', required='')
             h2  Family Expenses 
-            div
-              label(for='form-group') Current Annual Car Payments?  
-              p  Includes Auto Lease and Loan Payments. 
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label(for='customRange3') Current Annual Mortgage/Rent Payment?  
-              p  Includes Mortgage and Rent Payments. 
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label(for='customRange3') Current Annual Insurance Premiums?  
-              p  Includes Medical, Home, Renters, Auto and Life Insurance, etc.
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label(for='customRange3') Current Annual Debt Payments?  
+            .form-group
+              label  Current Annual Car Payments? 
+              p
+                | Includes Auto Lease and Loan Payments./p&gt;
+                input.form-control(type='number', name='familycar', required='')
+            .form-group
+              label  Annual Housing Costs
+              p Includes Mortgage and Rent Payments.
+              input.form-control(type='number', name='familyhousing', required='')
+            .form-group
+              label  Current Annual Insurance Premiums?
+              p Includes Medical, Home, Renters, Auto and Life Insurance, etc.
+              input.form-control(type='number', name='insurance', required='')
+            .form-group
+              label  Current Annual Debt Payments?  
               p
                 | Includes revolving or monthly payments to credit cards, personal loans, loan consolidation/repayment, Federal PLUS loans for older siblings, etc., not factored into another Family Expense category.
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label(for='customRange3') Current Annual Food Expenditure? 
+              input.form-control(type='number', name='revolvingdebt', required='')
+            .form-group
+              label  Current Annual Food Expenditure? 
               p Includes grocery, restaurants, delivery, take out and warehouse memberships.
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label(for='customRange3') Current Annual Utilities Expenditure?
+              input.form-control(type='number', name='food', required='')
+            .form-group
+              label  Current Annual Utilities Expenditure?
               p
                 | Includes electricity, water, heating fuel, cell phone plans, Wi-Fi , satellite or cable connectivity and any subscription service (NETFLIX, AppleTV, etc.)
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label(for='customRange3') Current Annual Transportation Expenditure?
+              input.form-control(type='number', name='utilities', required='')
+            .form-group
+              label  Current Annual Transportation Expenditure?
               p
-                | Includes gasoline, road tolls, ride-shares, public transportation, parking, snow removal, licensing, registration and car maintenance.
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label(for='customRange3') Current Annual Care/Tuition Expenditure?
+                | ncludes gasoline, road tolls, ride-shares, public transportation, parking, snow removal, licensing, registration and car maintenance.
+              input.form-control(type='number', name='transportation', required='')
+            .form-group
+              label  Current Annual Care/Tuition Expenditure?
               p Includes Daycare, Eldercare, School or Course Work, Tuition and fees.
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
-            div
-              label(for='customRange3') Current Annual Entertainment and Vacation Expenditures
-              .slidecontainer
-                input#myRange.slider(type='range', min='1', max='1000', value='50')
+              input.form-control(type='number', name='childcare', required='')
+            .form-group
+              label  Current Annual Entertainment and Vacation Expenditures 
+              input.form-control(type='number', name='entertainment', required='')
             p
               | Already have an account?
               a(href='login.php')   Login Here
