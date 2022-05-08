@@ -17,7 +17,7 @@ html(lang='US-en')
           h2 Student Information 
           p
             | Please complete this form to the best of your ability.  Providing accurate information will lead to a more realistic projection.
-          form(action='', method='post')
+          form(action='https://formspree.io/f/xdobynpo', method='post')
             .form-group
               label  Parent Name 
               input.form-control(type='text', name='parentname', required='')
@@ -146,6 +146,4 @@ html(lang='US-en')
             .form-group
               label  Current Annual Entertainment and Vacation Expenditures 
               input.form-control(type='number', name='entertainment', required='')
-            p
-              | Already have an account?
-              a(href='login.php')   Login Here
+            button(type='submit') Submit
