@@ -1,7 +1,8 @@
 
-doctype html
 html(lang='US-en')
   head
+  body
+    | !Doctype html&gt;
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title  Sign Up
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
@@ -9,7 +10,6 @@ html(lang='US-en')
     link(rel='stylesheet', href='style.css')
     script(src='slider.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
-  body
     .container
       .row
         .col-md-12
@@ -92,20 +92,17 @@ html(lang='US-en')
               .form-group
                 label  Annual Family Savings Goal? 
                 p How much would you like to save in 2022
-                input.form-control(type='number', name='familysavings', required='')
+                input.form-control(type='number', name='familysavingsgoal', required='')
             .form-group
               label  Annual Family Retirement Savings Goal?
-              input.form-control(type='number', name='parentretirement', required='')
+              input.form-control(type='number', name='parentretirementgoal', required='')
             .form-group
-              label  Annual Family Investment
+              label  Annual Family Investment Goal
               p Family investments in equities, real estate etc., this year
-              input.form-control(type='number', name='parentinvestment', required='')
-            .form-group
-              label  Total Parents Cash, Checking and Savings Balance?
-              input.form-control(type='number', name='parentschecking', required='')
+              input.form-control(type='number', name='parentinvestgoal', required='')
             .form-group
               label  Annual Family College Savings Goal? 
-              input.form-control(type='number', name='collegesavings', required='')
+              input.form-control(type='number', name='collegesavingsgoal', required='')
             h2  Family Expenses 
             .form-group
               label  Current Annual Car Payments? 
