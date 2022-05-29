@@ -1,10 +1,49 @@
-
 head
-  meta(name='viewport' content='width=device-width, initial-scale=1')
-  title  College Cap Input Form 
-  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
-  link(rel='stylesheet', type='text/css', href='formstyle.css')
-  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title College CAP
+  // Favicon
+  link(rel='icon' type='image/x-icon' href='assets/img/logo.jpg')
+  // Font Awesome icons (free version)
+  script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js' crossorigin='anonymous')
+  // Google fonts
+  link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css')
+  // Third party plugin CSS
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css' rel='stylesheet')
+  // Core theme CSS (includes Bootstrap)
+  link(href='css/styles.css' rel='stylesheet')
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-178820975-1')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+    dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-178820975-1');
+// Navigation
+nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+  .container
+    img.navbar-brand.js-scroll-trigger.logohead(src='assets/img/logo.jpg')
+    button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto.my-2.my-lg-0
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='index.html') Home
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='services.html') Services
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='about.html') About
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='events.html') Events
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='video.html') Video Tutorial
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='contact.html') Contact
 .container
   .row
     .col-md-12
