@@ -1,146 +1,154 @@
 
 html(lang='US-en')
-  head
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title  Sign Up
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
-    |  
-    link(rel='stylesheet', href='styles.css')
-    link(rel='stylesheet', href='src/css/formstyle.css')
-    script(src='slider.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
-  body
-    .container
-      .row
-        .col-md-12
-          h1  CAP Assessment Form 
-          h2 Student Information 
+  ead
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title  Sign Up
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+  link(rel='stylesheet' href='style.css')
+  link(rel='stylesheet' href='src/css/formstyle.css')
+  script(src='slider.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+.container
+  .row
+    .col-md-12
+      h1  CAP Assessment Form 
+      h2 Student Information 
+      p
+        | Please complete this form to the best of your ability.  Providing accurate information will lead to a more realistic projection.
+      form(action='https://formspree.io/f/xdobynpo' method='post')
+        .form-group
+          label  Parent Name 
+          input.form-control(type='text' name='parentname' required='')
+        .form-group
+          label  Student Name 
+          input.form-control(type='text' name='studentname' required='')
+        .form-group
+          label  State of Residence 
+          input.form-control(type='text' name='state' required='')
+        .form-group
+          label  County 
+          input.form-control(type='text' name='county' required='')
+        .form-group
+          label  Primary Contact Email Address 
+          input.form-control(type='email' name='email' required='')
+        h2 Family Information 
+        .form-group
+          label  Age of Oldest Parent 
+          input.form-control(type='number' name='oldestparent' required='')
+        .form-group
+          label  How many people live in the parents&rsquo; household, including parents? 
+          input.form-control(type='number' name='hhsize' required='')
+        .form-group
+          label
+            | How many people in the students&rsquo; household, including the student will be in college during the 2022-2023 school year?
+          input.form-control(type='number' name='numincollege' required='')
+        .form-group
+          label
+            | How many people in the students&rsquo; household, NOT including the student, will be in college during the same undergraduate years?
+          input.form-control(type='number' name='overlapcollege' required='')
+        h2  Family Income and Assets 
+        .form-group
+          label  Student Income in 2020 Tax Year? 
+          input.form-control(type='number' name='studentincome' required='')
+        .form-group
+          label  Parent 1 Income in 2020 Tax Year? 
+          input.form-control(type='number' name='p1income' required='')
+        .form-group
+          label  Parent 2 Income in 2020 Tax Year? 
+          input.form-control(type='number' name='p2income' required='')
+        .form-group
+          label  Child Support recived in 2020?
+          input.form-control(type='number' name='supportrecvd' required='')
+        .form-group
+          label  Aount of Untaxed Income in 2020 Tax Year?
+          input.form-control(type='number' name='untaxedincome' required='')
+        .form-group
+          label  Child Support Parents Paid in 2020 Tax Year? 
+          input.form-control(type='number' name='supportpaid' required='')
+        .form-group
+          label  Total Student Cash, Checking and Savings Balance? 
+          input.form-control(type='number' name='studentchecking' required='')
+        .form-check
+          input#Homeowner.form-check-input(type='checkbox' value='Y')
+          label.form-check-label(for='Homeowner')
+            | Yes
+        .form-check
+          input#Homeowner.form-check-input(type='checkbox' value='N')
+          label.form-check-label(for='Homeowner')
+            | No
+        .form-group
+          label  Total Student Investment Net Worth 
+          p If negative enter 0
+          input.form-control(type='number' name='studentinvestment' required='')
+        .form-group
+          label ** Total Student Business / Farm Net Worth?  
+          p Applies to Businesses employing &gt;100
+          input.form-control(type='number' name='studentbusiness' required='')
+        .form-group
+          label  Total Parents Cash, Checking and Savings Balance? 
+          input.form-control(type='number' name='householdsavings' required='')
+        .form-group
+          label  Total Parent Investment Net Worth 
+          p If negative enter 0
+          input.form-control(type='number' name='parentinvestment' required='')
+        .form-group
+          label  Total Parent Business / Farm Net Worth?  
+          p Applies to Businesses employing &gt;100
+          input.form-control(type='number' name='parentbusiness' required='')
+        h2 Family Financial Goals for 2022
+        div
+          .form-group
+            label  Annual Family Savings Goal? 
+            p How much would you like to save in 2022
+            input.form-control(type='number' name='familysavingsgoal' required='')
+        .form-group
+          label  Annual Family Retirement Savings Goal?
+          input.form-control(type='number' name='parentretirementgoal' required='')
+        .form-group
+          label  Annual Family Investment Goal
+          p Family investments in equities, real estate etc., this year
+          input.form-control(type='number' name='parentinvestgoal' required='')
+        .form-group
+          label  Annual Family College Savings Goal? 
+          input.form-control(type='number' name='collegesavingsgoal' required='')
+        h2  Family Expenses 
+        .form-group
+          label  Current Annual Car Payments? 
           p
-            | Please complete this form to the best of your ability.  Providing accurate information will lead to a more realistic projection.
-          form(action='https://formspree.io/f/xdobynpo', method='post')
-            .form-group
-              label  Parent Name 
-              input.form-control(type='text', name='parentname', required='')
-            .form-group
-              label  Student Name 
-              input.form-control(type='text', name='studentname', required='')
-            .form-group
-              label  State of Residence 
-              input.form-control(type='text', name='state', required='')
-            .form-group
-              label  County 
-              input.form-control(type='text', name='county', required='')
-            .form-group
-              label  Primary Contact Email Address 
-              input.form-control(type='email', name='email', required='')
-            h2 Family Information 
-            .form-group
-              label  Age of Oldest Parent 
-              input.form-control(type='number', name='oldestparent', required='')
-            .form-group
-              label  How many people live in the parents&rsquo; household, including parents? 
-              input.form-control(type='number', name='hhsize', required='')
-            .form-group
-              label
-                | How many people in the students&rsquo; household, including the student will be in college during the 2022-2023 school year?
-              input.form-control(type='number', name='numincollege', required='')
-            .form-group
-              label
-                | How many people in the students&rsquo; household, NOT including the student, will be in college during the same undergraduate years?
-              input.form-control(type='number', name='overlapcollege', required='')
-            h2  Family Income and Assets 
-            .form-group
-              label  Student Income in 2020 Tax Year? 
-              input.form-control(type='number', name='studentincome', required='')
-            .form-group
-              label  Parent 1 Income in 2020 Tax Year? 
-              input.form-control(type='number', name='p1income', required='')
-            .form-group
-              label  Parent 2 Income in 2020 Tax Year? 
-              input.form-control(type='number', name='p2income', required='')
-            .form-group
-              label  Parent Combined Untaxed Income in 2020 Tax Year?
-              p Please include Child Support Received if Applicable
-              input.form-control(type='number', name='untaxedincome', required='')
-            .form-group
-              label  Child Support Parents Paid in 2020 Tax Year? 
-              input.form-control(type='number', name='supportpaid', required='')
-            .form-group
-              label  Total Student Cash, Checking and Savings Balance? 
-              input.form-control(type='number', name='studentchecking', required='')
-            .form-group
-              label  Total Student Investment Net Worth 
-              p If negative enter 0
-              input.form-control(type='number', name='studentinvestment', required='')
-            .form-group
-              label ** Total Student Business / Farm Net Worth?  
-              p Applies to Businesses employing &gt;100
-              input.form-control(type='number', name='studentbusiness', required='')
-            .form-group
-              label  Total Parents Cash, Checking and Savings Balance? 
-              input.form-control(type='number', name='parentschecking', required='')
-            .form-group
-              label  Total Parent Investment Net Worth 
-              p If negative enter 0
-              input.form-control(type='number', name='parentinvestment', required='')
-            .form-group
-              label  Total Parent Business / Farm Net Worth?  
-              p Applies to Businesses employing &gt;100
-              input.form-control(type='number', name='parentbusiness', required='')
-            h2 Family Financial Goals for 2022
-            div
-              .form-group
-                label  Annual Family Savings Goal? 
-                p How much would you like to save in 2022
-                input.form-control(type='number', name='familysavingsgoal', required='')
-            .form-group
-              label  Annual Family Retirement Savings Goal?
-              input.form-control(type='number', name='parentretirementgoal', required='')
-            .form-group
-              label  Annual Family Investment Goal
-              p Family investments in equities, real estate etc., this year
-              input.form-control(type='number', name='parentinvestgoal', required='')
-            .form-group
-              label  Annual Family College Savings Goal? 
-              input.form-control(type='number', name='collegesavingsgoal', required='')
-            h2  Family Expenses 
-            .form-group
-              label  Current Annual Car Payments? 
-              p
-                | Includes Auto Lease and Loan Payments./p&gt;
-                input.form-control(type='number', name='familycar', required='')
-            .form-group
-              label  Annual Housing Costs
-              p Includes Mortgage and Rent Payments.
-              input.form-control(type='number', name='familyhousing', required='')
-            .form-group
-              label  Current Annual Insurance Premiums?
-              p Includes Medical, Home, Renters, Auto and Life Insurance, etc.
-              input.form-control(type='number', name='insurance', required='')
-            .form-group
-              label  Current Annual Debt Payments?  
-              p
-                | Includes revolving or monthly payments to credit cards, personal loans, loan consolidation/repayment, Federal PLUS loans for older siblings, etc., not factored into another Family Expense category.
-              input.form-control(type='number', name='revolvingdebt', required='')
-            .form-group
-              label  Current Annual Food Expenditure? 
-              p Includes grocery, restaurants, delivery, take out and warehouse memberships.
-              input.form-control(type='number', name='food', required='')
-            .form-group
-              label  Current Annual Utilities Expenditure?
-              p
-                | Includes electricity, water, heating fuel, cell phone plans, Wi-Fi , satellite or cable connectivity and any subscription service (NETFLIX, AppleTV, etc.)
-              input.form-control(type='number', name='utilities', required='')
-            .form-group
-              label  Current Annual Transportation Expenditure?
-              p
-                | ncludes gasoline, road tolls, ride-shares, public transportation, parking, snow removal, licensing, registration and car maintenance.
-              input.form-control(type='number', name='transportation', required='')
-            .form-group
-              label  Current Annual Care/Tuition Expenditure?
-              p Includes Daycare, Eldercare, School or Course Work, Tuition and fees.
-              input.form-control(type='number', name='childcare', required='')
-            .form-group
-              label  Current Annual Entertainment and Vacation Expenditures 
-              input.form-control(type='number', name='entertainment', required='')
-            button(type='submit') Submit
+            | Includes Auto Lease and Loan Payments./p&gt;
+            input.form-control(type='number' name='familycar' required='')
+        .form-group
+          label  Annual Housing Costs
+          p Includes Mortgage and Rent Payments.
+          input.form-control(type='number' name='familyhousing' required='')
+        .form-group
+          label  Current Annual Insurance Premiums?
+          p Includes Medical, Home, Renters, Auto and Life Insurance, etc.
+          input.form-control(type='number' name='insurance' required='')
+        .form-group
+          label  Current Annual Debt Payments?  
+          p
+            | Includes revolving or monthly payments to credit cards, personal loans, loan consolidation/repayment, Federal PLUS loans for older siblings, etc., not factored into another Family Expense category.
+          input.form-control(type='number' name='revolvingdebt' required='')
+        .form-group
+          label  Current Annual Food Expenditure? 
+          p Includes grocery, restaurants, delivery, take out and warehouse memberships.
+          input.form-control(type='number' name='food' required='')
+        .form-group
+          label  Current Annual Utilities Expenditure?
+          p
+            | Includes electricity, water, heating fuel, cell phone plans, Wi-Fi , satellite or cable connectivity and any subscription service (NETFLIX, AppleTV, etc.)
+          input.form-control(type='number' name='utilities' required='')
+        .form-group
+          label  Current Annual Transportation Expenditure?
+          p
+            | Includes gasoline, road tolls, ride-shares, public transportation, parking, snow removal, licensing, registration and car maintenance.
+          input.form-control(type='number' name='transportation' required='')
+        .form-group
+          label  Current Annual Care/Tuition Expenditure?
+          p Includes Daycare, Eldercare, School or Course Work, Tuition and fees.
+          input.form-control(type='number' name='childcare' required='')
+        .form-group
+          label  Current Annual Entertainment and Vacation Expenditures 
+          input.form-control(type='number' name='entertainment' required='')
+        button(type='submit') Submit
