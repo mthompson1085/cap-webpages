@@ -1,4 +1,5 @@
 
+doctype html
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -54,7 +55,8 @@ header.masthead
         hr.divider.my-4
       .col-lg-8.align-self-baseline
         p.text-white-75.font-weight-light.mb-5 Let College CAP help you determine college affordability!
-        a.btn.btn-primary.btn-xl.js-scroll-trigger(href='contact.html') Find Out More
+br
+br
 .container
   .row
     .col-md-12
@@ -126,7 +128,7 @@ header.masthead
             | No
         .form-group
           label
-            | If you indicated you own your home indicate the accessed value below, if you indicated No Enter 0
+            | If you indicated you own your home indicate the accessed value below, if you indicated &quot;No&quot; enter 0
           input.form-control(type='number' name='housevalue' required='')
         .form-group
           label  Total Student Investment Net Worth 
@@ -166,9 +168,8 @@ header.masthead
         h2  Family Expenses 
         .form-group
           label  Current Annual Car Payments? 
-          p
-            | Includes Auto Lease and Loan Payments./p&gt;
-            input.form-control(type='number' name='familycar' required='')
+          p Includes Auto Lease and Loan Payments.
+          input.form-control(type='number' name='familycar' required='')
         .form-group
           label  Annual Housing Costs
           p Includes Mortgage and Rent Payments.
