@@ -79,7 +79,8 @@ br
           input.form-control(type='text' name='studentname' required='')
         .form-group
           label  State of Residence 
-          i.fas.fa-info-circle
+          a(href='#' data-bs-toggle='tooltip' title='Please enter the state of legal residence.  Please refer to your state requirements if you have recently moved.')
+            i.bi.bi-info-circle
           input.form-control(type='text' name='state' required='')
         .form-group
           label  County 
@@ -93,7 +94,7 @@ br
           input.form-control(type='number' name='oldestparent' required='')
         .form-group
           label  How many people live in the parents&rsquo; household, including parents? 
-          a(href='#' data-bs-toggle='tooltip' title='Please enter the state of legal residence.  Please refer to your state requirements if you have recently moved.')
+          a(href='#' data-bs-toggle='tooltip' title="If your parents are divorced, seperated, are never married, provide the number of household memebers in your custodial parent's household.")
             i.bi.bi-info-circle
           input.form-control(type='number' name='hhsize' required='')
         .form-group
