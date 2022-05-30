@@ -11,10 +11,11 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- Third party plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
@@ -30,6 +31,12 @@
             gtag('js', new Date());
             gtag('config', 'UA-178820975-1');
         </script>
+
+        <script>
+        $(document).ready(function(){
+        $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -99,7 +106,7 @@
                             <input type="number" name="oldestparent" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> How many people live in the parents’ household, including parents? </label> <i class="bi bi-info-circle" data-toggle="tooltip" title="Please enter the state of legal residence.  Please refer to your state requirements if you have recently moved."></i>
+                            <label> How many people live in the parents’ household, including parents? </label> <a href="#" data-bs-toggle="tooltip" title="Please enter the state of legal residence.  Please refer to your state requirements if you have recently moved."><i class="bi bi-info-circle"></i></a>
                             <input type="number" name="hhsize" class="form-control" required>
                         </div>
                         <div class="form-group">
@@ -132,11 +139,11 @@
                             <input type="number" name="untaxedincome" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Child Support Parents Paid in 2020 Tax Year? </label>
+                            <label> Child Support Parents Paid in 2020 Tax Year? </label> <a href="#" data-bs-toggle="tooltip" title="Provide the support paid by your custondial parent"><i class="bi bi-info-circle"></i></a>
                             <input type="number" name="supportpaid" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Total Student Cash, Checking and Savings Balance? </label>
+                            <label> Total Student Cash, Checking and Savings Balance? </label> <a href="#" data-bs-toggle="tooltip" title="Provide your current balances as of today.  Include all accounts with the exception of retirement accounts or dedicated investment or brokerage accounts."><i class="bi bi-info-circle"></i></a>
                             <input type="number" name="studentchecking" class="form-control" required>
                         </div>
                         <label>Do your Parents own a home?</label>
