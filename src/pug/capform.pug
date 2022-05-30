@@ -205,6 +205,10 @@ br
           label  Current Annual Entertainment and Vacation Expenditures 
           input.form-control(type='number' name='entertainment' required='')
         button(type='submit') Submit
+        script.
+          $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+          });
 // Footer
 footer.bg-light.py-5
   .container
