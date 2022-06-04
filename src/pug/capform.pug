@@ -72,10 +72,11 @@ br
         | Please complete this form to the best of your ability.  Providing accurate information will lead to a more realistic projection.
       form(action='https://formspree.io/f/xdobynpo' method='post')
         .form-group
-          label  Parent Name 
+          label
+            | Parent Name  
+            a(href='#' data-bs-toggle='tooltip' title='Please provide the parent first and last name that will be the main contact.')
+              i.bi.bi-info-circle
           input.form-control(type='text' name='parentname' placeholder='First and Last Name' required='')
-          a(href='#' data-bs-toggle='tooltip' title='Please provide the parent first and last name that will be the main contact.')
-            i.bi.bi-info-circle
         .form-group
           label  Student Name 
           input.form-control(type='text' name='studentname' required='')
