@@ -85,9 +85,11 @@ br
           a(href='#' data-bs-toggle='tooltip' title='Please enter the state of legal residence.  Please refer to your state requirements if you have recently moved.')
             i.bi.bi-info-circle
           input.form-control(type='text' name='state' required='')
-        .form-group
-          label  County 
-          input.form-control(type='text' name='county' required='')
+        //
+          <div class="form-group">
+          <label> County </label>
+          <input type="text" name="county" class="form-control" required>
+          </div>
         .form-group
           label  Primary Contact Email Address 
           input.form-control(type='email' name='email' required='')
@@ -155,36 +157,53 @@ br
           a(href='#' data-bs-toggle='tooltip' title='Provide student current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts')
             i.bi.bi-info-circle
           input.form-control(type='number' name='studentchecking' required='')
-        label Do your Parents own a home?
-        .form-check
-          input#Homeowner.form-check-input(type='checkbox' value='Y' name='homeowner')
-          label.form-check-label(for='Homeowner')
-            | Yes
-        .form-check
-          input#Homeowner.form-check-input(type='checkbox' value='N' name='homeowner')
-          label.form-check-label(for='Homeowner')
-            | No
-        .form-group
-          label
-            | If you indicated you own your home indicate the accessed value below, if you indicated &quot;No&quot; enter 0
-          input.form-control(type='number' name='housevalue' required='')
+        //
+          <label>Do your Parents own a home?</label> </label> <a href="#" data-bs-toggle="tooltip" title="Indicate Yes if the household student spends majority of time is owned. This will be used for "><i class="bi bi-info-circle"></i></a>
+          <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Y" name="homeowner" id="Homeowner">
+          <label class="form-check-label" for="Homeowner">
+          Yes
+          </label>
+          </div>
+          <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="N" name="homeowner" id="Homeowner">
+          <label class="form-check-label" for="Homeowner">
+          No
+          </label>
+          </div>
+          <div class="form-group">
+          <label> If you indicated you own your home indicate the accessed value below, if you indicated "No" enter 0  </label>
+          <input type="number" name="housevalue" class="form-control" required>
+          </div>
         .form-group
           label  Total Student Investment Net Worth 
+          a(href='#' data-bs-toggle='tooltip' title='Enter in the amount of investment assets that student owns.  For example balances of owned stock or value of rental properties.  If the student has none, enter 0.')
+            i.bi.bi-info-circle
           p If negative enter 0
           input.form-control(type='number' name='studentinvestment' required='')
         .form-group
-          label ** Total Student Business / Farm Net Worth?  
+          label Total Student Business / Farm Net Worth?  
+          a(href='#' data-bs-toggle='tooltip' title='Enter in business value of any student owned business that has more than 100 employees.  Enter 0 if there is student does not own a buiness or farm with over 100 employees.')
+            i.bi.bi-info-circle
           p Applies to Businesses employing &gt;100
           input.form-control(type='number' name='studentbusiness' required='')
         .form-group
           label  Total Parent Investment Net Worth 
+          a(href='#' data-bs-toggle='tooltip' title='Enter in the amount of investment assets that Parent owns.  For example balances of owned stock or value of rental properties.  If the Parent has none, enter 0.')
+            i.bi.bi-info-circle
           p If negative enter 0
           input.form-control(type='number' name='parentinvestment' required='')
         .form-group
           label  Total Parent Business / Farm Net Worth?  
+          a(href='#' data-bs-toggle='tooltip' title='Enter in business value of any Parent owned business that has more than 100 employees.  Enter 0 if there is Parents do not own a buiness or farm with over 100 employees.')
+            i.bi.bi-info-circle
           p Applies to Businesses employing &gt;100
           input.form-control(type='number' name='parentbusiness' required='')
         h2 Family Financial Goals for 2022
+        h3
+          | In this section we are looking to get a better understanding of your financial goals for the upcoming year. For each of these questions we would like you to enter the amount that your familiy would like to contribute to each of the categories to gain financal secruity.  If you do not have any goals or do not contribute to these areas, you may enter 0.
+        br
+        br
         div
           .form-group
             label  Annual Family Savings Goal? 
