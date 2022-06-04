@@ -116,19 +116,29 @@ br
           input.form-control(type='number' name='overlapcollege' required='')
         h2  Family Income and Assets 
         .form-group
-          label  Student Income in 2020 Tax Year? 
+          label  How much did the student earn in 2020? 
+          a(href='#' data-bs-toggle='tooltip' title='Include all earnings, wages, tips, and business income that the student received in 2020')
+            i.bi.bi-info-circle
           input.form-control(type='number' name='studentincome' required='')
         .form-group
-          label  Parent 1 Income in 2020 Tax Year? 
+          label  How much did Parent 1 earn in 2020 Tax Year? 
+          a(href='#' data-bs-toggle='tooltip' title='Include all earnings, wages, tips, and business income that Parent 1 received in 2020')
+            i.bi.bi-info-circle
           input.form-control(type='number' name='p1income' required='')
         .form-group
           label  Parent 2 Income in 2020 Tax Year? 
+          a(href='#' data-bs-toggle='tooltip' title='Include all earnings, wages, tips, and business income that Parent 2 received in 2020, If there is not a Parent 2 please enter 0')
+          i.bi.bi-info-circle
           input.form-control(type='number' name='p2income' required='')
         .form-group
           label  Child Support received in 2020?
+          a(href='#' data-bs-toggle='tooltip' title='Enter in all Child Support received in the household that the students spends majority of their time.')
+            i.bi.bi-info-circle
           input.form-control(type='number' name='supportrecvd' required='')
         .form-group
           label  Amount of Untaxed Income in 2020 Tax Year?
+          a(href='#' data-bs-toggle='tooltip' title='Enter in any income received by parents that is untaxed such as Social Security payments, legal settlements, or other income received. If there is no untaxed income enter 0.')
+            i.bi.bi-info-circle
           input.form-control(type='number' name='untaxedincome' required='')
         .form-group
           label  Child Support Parents Paid in 2020 Tax Year? 
@@ -136,8 +146,13 @@ br
             i.bi.bi-info-circle
           input.form-control(type='number' name='supportpaid' required='')
         .form-group
+          label  Total Parents Cash, Checking and Savings Balance? 
+          a(href='#' data-bs-toggle='tooltip' title="Provide parents' current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts.")
+            i.bi.bi-info-circle
+          input.form-control(type='number' name='householdsavings' required='')
+        .form-group
           label  Total Student Cash, Checking and Savings Balance? 
-          a(href='#' data-bs-toggle='tooltip' title='Provide your current balances as of today.  Include all accounts with the exception of retirement accounts or dedicated investment or brokerage accounts.')
+          a(href='#' data-bs-toggle='tooltip' title='Provide student current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts')
             i.bi.bi-info-circle
           input.form-control(type='number' name='studentchecking' required='')
         label Do your Parents own a home?
@@ -161,9 +176,6 @@ br
           label ** Total Student Business / Farm Net Worth?  
           p Applies to Businesses employing &gt;100
           input.form-control(type='number' name='studentbusiness' required='')
-        .form-group
-          label  Total Parents Cash, Checking and Savings Balance? 
-          input.form-control(type='number' name='householdsavings' required='')
         .form-group
           label  Total Parent Investment Net Worth 
           p If negative enter 0
