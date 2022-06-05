@@ -81,7 +81,7 @@
                     <p>Please complete this form to the best of your ability.  Providing accurate information will lead to a more realistic projection.</p>
                     <form action="https://formspree.io/f/xdobynpo" method="post">
                         <div class="form-group">
-                            <label> Parent Name  <a href="#" data-bs-toggle="tooltip" title="Please provide the parent first and last name that will be the main contact."><i class="bi bi-info-circle"></i></a></label>
+                            <label> Parent Name  <a href="#" data-bs-toggle="tooltip" title="Please provide the parent first and last name that will be the main contact."><i class="bi bi-info-circle-fill"></i></a></label>
                             <input type="text" name="parentname" placeholder="First and Last Name" class="form-control" required> 
                         </div>
                         <div class="form-group">
@@ -89,7 +89,7 @@
                             <input type="text" name="studentname" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> State of Residence </label> <a href="#" data-bs-toggle="tooltip" title="Please enter the state of legal residence.  Please refer to your state requirements if you have recently moved."><i class="bi bi-info-circle"></i></a>
+                            <label> State of Residence </label> <a href="#" data-bs-toggle="tooltip" title="Please enter the state of legal residence.  Please refer to your state requirements if you have recently moved."><i class="bi bi-info-circle-fill"></i></a>
                             <input type="text" name="state" class="form-control" required>
                         </div>
                        <!-- <div class="form-group">
@@ -98,57 +98,57 @@
                         </div> -->
                         <div class="form-group">
                             <label> Primary Contact Email Address </label>
-                            <input type="email" name="email" class="form-control" required>
+                            <input type="email" name="email" placeholder="example@email.com" class="form-control" required>
                         </div>
                         <h2>Family Information </h2>
                         <div class="form-group">
-                            <label> Age of Oldest Parent </label> <a href="#" data-bs-toggle="tooltip" title="Please enter the age of your oldest living biological or step-parent if applicable"><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="oldestparent" placeholder="XX" class="form-control" required>
+                            <label> Age of Oldest Parent </label> <a href="#" data-bs-toggle="tooltip" title="Please enter the age of your oldest living biological or step-parent if applicable"><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="oldestparent" placeholder="##" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> How many people live in the household, including parents? </label> <a href="#" data-bs-toggle="tooltip" title="Include all the members of your household that the student spends the majority of time at.  This includes parents, siblings, siblings in college, and any other dependents like dependent grandparents."><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="hhsize" placeholder="XX" class="form-control" required>
+                            <label> How many people live in the household, including parents? </label> <a href="#" data-bs-toggle="tooltip" title="Include all the members of your household that the student spends the majority of time at.  This includes parents, siblings, siblings in college, and any other dependents like dependent grandparents."><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="hhsize" placeholder="##" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> How many people in the household, including the student will be in college during the 2022-2023 school year? </label> <a href="#" data-bs-toggle="tooltip" title="Please do not include parents that are enrolled in college"><i class="bi bi-info-circle"></i></a></label>
-                            <input type="number" name="numincollege" placeholder="XX" class="form-control" required>
+                            <label> How many people in the household, including the student will be in college during the 2022-2023 school year? </label> <a href="#" data-bs-toggle="tooltip" title="Please do not include parents that are enrolled in college"><i class="bi bi-info-circle-fill"></i></a></label>
+                            <input type="number" name="numincollege" placeholder="##" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> How many people in the household, not including the student, will be enrolled during the student's projected 4 year college degree? </label></label> <a href="#" data-bs-toggle="tooltip" title="Enter any other members of the household that are projected to attend college at the same time as this student.  For Example if they have a sibling that in a junior in High School and they are considering attending college, add them to this number."><i class="bi bi-info-circle"></i></a></label>
-                            <input type="number" name="overlapcollege" class="form-control" required>
+                            <label> How many people in the household, not including the student, will be enrolled during the student's projected 4 year college degree? </label></label> <a href="#" data-bs-toggle="tooltip" title="Enter any other members of the household that are projected to attend college at the same time as this student.  For Example if they have a sibling that in a junior in High School and they are considering attending college, add them to this number."><i class="bi bi-info-circle-fill"></i></a></label>
+                            <input type="number" name="overlapcollege" placeholder="##"  class="form-control" required>
                         </div>
                         <h2> Family Income and Assets </h2>
                         <div class="form-group">
-                            <label> How much did the student earn in 2020? </label></label></label> <a href="#" data-bs-toggle="tooltip" title="Include all earnings, wages, tips, and business income that the student received in 2020"><i class="bi bi-info-circle"></i></a></label>
-                            <input type="number" name="studentincome" class="form-control" required>
+                            <label> How much did the student earn in 2020? </label></label></label> <a href="#" data-bs-toggle="tooltip" title="Include all earnings, wages, tips, and business income that the student received in 2020"><i class="bi bi-info-circle-fill"></i></a></label>
+                            <input type="number" name="studentincome" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> How much did Parent 1 earn in 2020? </label> <a href="#" data-bs-toggle="tooltip" title="Include all earnings, wages, tips, and business income that Parent 1 received in 2020"><i class="bi bi-info-circle"></i></a></label>
-                            <input type="number" name="p1income" class="form-control" required>
+                            <label> How much did Parent 1 earn in 2020? </label> <a href="#" data-bs-toggle="tooltip" title="Include all earnings, wages, tips, and business income that Parent 1 received in 2020"><i class="bi bi-info-circle-fill"></i></a></label>
+                            <input type="number" name="p1income" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> How much did Parent 2 earn in 2020? </label> <a href="#" data-bs-toggle="tooltip" title="Include all earnings, wages, tips, and business income that Parent 2 received in 2020, If there is not a Parent 2 please enter 0"></a> <i class="bi bi-info-circle"></i></a></label>
-                            <input type="number" name="p2income" class="form-control" required>
+                            <label> How much did Parent 2 earn in 2020? </label> <a href="#" data-bs-toggle="tooltip" title="Include all earnings, wages, tips, and business income that Parent 2 received in 2020, If there is not a Parent 2 please enter 0"> <i class="bi bi-info-circle-fill"></i></a></label>
+                            <input type="number" name="p2income"  placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Child Support received in 2020?</label> <a href="#" data-bs-toggle="tooltip" title="Enter in all Child Support received in the household that the students spends majority of their time."><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="supportrecvd" class="form-control" required>
+                            <label> Child Support received in 2020?</label> <a href="#" data-bs-toggle="tooltip" title="Enter in all Child Support received in the household that the students spends majority of their time."><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="supportrecvd" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Amount of Untaxed Income in 2020 Tax Year?</label> <a href="#" data-bs-toggle="tooltip" title="Enter in any income received by parents that is untaxed such as Social Security payments, legal settlements, or other income received. If there is no untaxed income enter 0."><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="untaxedincome" class="form-control" required>
+                            <label> Amount of Untaxed Income in 2020 Tax Year?</label> <a href="#" data-bs-toggle="tooltip" title="Enter in any income received by parents that is untaxed such as Social Security payments, legal settlements, or other income received. If there is no untaxed income enter 0."><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="untaxedincome" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Child Support Parents Paid in 2020 Tax Year? </label> <a href="#" data-bs-toggle="tooltip" title="Provide the support paid by your custodial parent"><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="supportpaid" class="form-control" required>
+                            <label> Child Support Parents Paid in 2020 Tax Year? </label> <a href="#" data-bs-toggle="tooltip" title="Provide the support paid by your custodial parent"><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="supportpaid" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Total Parents Cash, Checking and Savings Balance? </label> <a href="#" data-bs-toggle="tooltip" title="Provide parents' current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts."><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="householdsavings" class="form-control" required>
+                            <label> Total Parents Cash, Checking and Savings Balance? </label> <a href="#" data-bs-toggle="tooltip" title="Provide parents' current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts."><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="householdsavings" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Total Student Cash, Checking and Savings Balance? </label> <a href="#" data-bs-toggle="tooltip" title="Provide student current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts"><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="studentchecking" class="form-control" required>
+                            <label> Total Student Cash, Checking and Savings Balance? </label> <a href="#" data-bs-toggle="tooltip" title="Provide student current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts"><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="studentchecking" placeholder="$ ##,###" class="form-control" required>
                         </div>
                        <!--<label>Do your Parents own a home?</label> </label> <a href="#" data-bs-toggle="tooltip" title="Indicate Yes if the household student spends majority of time is owned. This will be used for "><i class="bi bi-info-circle"></i></a>
                         <div class="form-check">
@@ -168,24 +168,24 @@
                             <input type="number" name="housevalue" class="form-control" required>
                         </div> -->
                         <div class="form-group">
-                            <label> Total Student Investment Net Worth </label> <a href="#" data-bs-toggle="tooltip" title="Enter in the amount of investment assets that student owns.  For example balances of owned stock or value of rental properties.  If the student has none, enter 0."><i class="bi bi-info-circle"></i></a>
+                            <label> Total Student Investment Net Worth </label> <a href="#" data-bs-toggle="tooltip" title="Enter in the amount of investment assets that student owns.  For example balances of owned stock or value of rental properties.  If the student has none, enter 0."><i class="bi bi-info-circle-fill"></i></a>
                             <p>If negative enter 0</p>
-                            <input type="number" name="studentinvestment" class="form-control" required>
+                            <input type="number" name="studentinvestment" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Total Student Business / Farm Net Worth?  </label>  <a href="#" data-bs-toggle="tooltip" title="Enter in business value of any student owned business that has more than 100 employees.  Enter 0 if there is student does not own a buiness or farm with over 100 employees."><i class="bi bi-info-circle"></i></a>
+                            <label>Total Student Business / Farm Net Worth?  </label>  <a href="#" data-bs-toggle="tooltip" title="Enter in business value of any student owned business that has more than 100 employees.  Enter 0 if there is student does not own a buiness or farm with over 100 employees."><i class="bi bi-info-circle-fill"></i></a>
                             <p>Applies to Businesses employing >100</p>
-                            <input type="number" name="studentbusiness" class="form-control" required>
+                            <input type="number" name="studentbusiness" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Total Parent Investment Net Worth </label> <a href="#" data-bs-toggle="tooltip" title="Enter in the amount of investment assets that Parent owns.  For example balances of owned stock or value of rental properties.  If the Parent has none, enter 0."><i class="bi bi-info-circle"></i></a>
+                            <label> Total Parent Investment Net Worth </label> <a href="#" data-bs-toggle="tooltip" title="Enter in the amount of investment assets that Parent owns.  For example balances of owned stock or value of rental properties.  If the Parent has none, enter 0."><i class="bi bi-info-circle-fill"></i></a>
                             <p>If negative enter 0</p>
-                            <input type="number" name="parentinvestment" class="form-control" required>
+                            <input type="number" name="parentinvestment" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label> Total Parent Business / Farm Net Worth?  </label> <a href="#" data-bs-toggle="tooltip" title="Enter in business value of any Parent owned business that has more than 100 employees.  Enter 0 if there is Parents do not own a buiness or farm with over 100 employees."><i class="bi bi-info-circle"></i></a>
+                            <label> Total Parent Business / Farm Net Worth?  </label> <a href="#" data-bs-toggle="tooltip" title="Enter in business value of any Parent owned business that has more than 100 employees.  Enter 0 if there is Parents do not own a buiness or farm with over 100 employees."><i class="bi bi-info-circle-fill"></i></a>
                             <p>Applies to Businesses employing >100</p>
-                            <input type="number" name="parentbusiness" class="form-control" required>
+                            <input type="number" name="parentbusiness" placeholder="$ ##,###" class="form-control" required>
                         </div>
                         <h2>Family Financial Goals for 2022</h2>
                         <h3> In this section we are looking to get a better understanding of your financial goals for the upcoming year. For each of these questions we would like you to enter the amount that your familiy would like to contribute to each of the categories to gain financal secruity.  If you do not have any goals or do not contribute to these areas, you may enter 0. </h3>
@@ -194,83 +194,82 @@
                         <div>
 
                             <div class="form-group">
-                                <label> How much do you anticipate you will contribute monthly to your savings? </label> <a href="#" data-bs-toggle="tooltip" title="Enter the amount that you will contribute to your 'Rainy Day' fund.  It is recommended that you have atleast 3 months of salary saved if possible"><i class="bi bi-info-circle"></i></a>
+                                <label> How much do you anticipate you will contribute monthly to your savings? </label> <a href="#" data-bs-toggle="tooltip" title="Enter the amount that you will contribute to your 'Rainy Day' fund.  It is recommended that you have atleast 3 months of salary saved if possible"><i class="bi bi-info-circle-fill"></i></a>
                                 <p>How much would you like to save in 2022</p>
-                                <input type="number" name="familysavingsgoal" class="form-control" required>
+                                <input type="number" name="familysavingsgoal" placeholder="$ ##,###" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label> How much do you anticipate you will contribute to your retirement monthly? Please enter as a dollar amount.</label> <a href="#" data-bs-toggle="tooltip" title="Enter the amount that you will contribute to IRA's, 401K's, or any other dedicated retirement account. It is recommended that you you contribute 15% of your income towards retirement"><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="parentretirementgoal" class="form-control" required>
+                            <label> How much do you anticipate you will contribute to your retirement monthly? Please enter as a dollar amount.</label> <a href="#" data-bs-toggle="tooltip" title="Enter the amount that you will contribute to IRA's, 401K's, or any other dedicated retirement account. It is recommended that you you contribute 15% of your income towards retirement"><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="parentretirementgoal" placeholder="$ ##,###" class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> How much do you antipate you will invest monthly in 2022?</label> <a href="#" data-bs-toggle="tooltip" title="Please enter the amount that you anticiapte that you will actively invest each month into stocks or any other investment tools."><i class="bi bi-info-circle"></i></a>
+                            <label> How much do you antipate you will invest monthly in 2022?</label> <a href="#" data-bs-toggle="tooltip" title="Please enter the amount that you anticiapte that you will actively invest each month into stocks or any other investment tools."><i class="bi bi-info-circle-fill"></i></a>
                             <p>Family investments in equities, real estate etc., this year</p>
                             <input type="number" name="parentinvestgoal" class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> How much do you anticipate you will contribute monthly to a college saving plan or account?</label> <a href="#" data-bs-toggle="tooltip" title="Include amounts for all children in this amount"><i class="bi bi-info-circle"></i></a>
-                            <input type="number" name="collegesavingsgoal" class="form-control" required>
+                            <label> How much do you anticipate you will contribute monthly to a college saving plan or account?</label> <a href="#" data-bs-toggle="tooltip" title="Include amounts for all children in this amount"><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="collegesavingsgoal" placeholder="$ ##,###"  class="form-control" required>
                         </div>
 
                         <h2> Family Expenses </h2>
-                        <h3>Please provide your monthly family expenses.  This will help give us a better sense of the expenses you have going out each month.</h3>
+                        <h3>Please provide your monthly family expenses.  This will help give us a better sense of the expenses you have going out each month. Please anser these questions based on the entire household rather than an individual.</h3>
                     </br>
                     </br>
 
                         <div class="form-group">
-                            <label> Monthly Car Payments? </label>
+                            <label> Monthly Car Payments? </label> <a href="#" data-bs-toggle="tooltip" title="Include payment only.  Do not include gas, insurance, or any other car related expenses.  If you do not own cars or have a payment please enter 0."><i class="bi bi-info-circle-fill"></i></a>
                             <p>Includes Auto Lease and Loan Payments.</p>
-                            <input type="number" name="familycar" class="form-control" required>
+                            <input type="number" name="familycar" placeholder="$ ##,###"  class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Monthly Housing Costs</label>
+                            <label> Monthly Housing Costs</label> 
                             <p>Includes Mortgage and Rent Payments.</p>
-                            <input type="number" name="familyhousing" class="form-control" required>
+                            <input type="number" name="familyhousing" placeholder="$ ##,###"  class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Monthly Insurance Premiums?</label>
+                            <label> Monthly Insurance Premiums?</label> <a href="#" data-bs-toggle="tooltip" title="Do not include insurances that are included in your housing payments."><i class="bi bi-info-circle-fill"></i></a>
                             <p>Includes Medical, Home, Renters, Auto and Life Insurance, etc.</p>
-                            <input type="number" name="insurance" class="form-control" required>
+                            <input type="number" name="insurance" placeholder="$ ##,###"  class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Monthly Debt Payments?  </label>
-                            <p>Includes revolving or monthly payments to credit cards, personal loans, loan consolidation/repayment, Federal PLUS loans for older siblings, etc., not factored into another Family Expense category.</p>
-                            <input type="number" name="revolvingdebt" class="form-control" required>
+                            <label> Monthly Debt Payments?  </label> <a href="#" data-bs-toggle="tooltip" title="Includes revolving or monthly payments to credit cards, personal loans, loan consolidation/repayment, Federal PLUS loans for older siblings, etc., not factored into another Family Expense category."><i class="bi bi-info-circle-fill"></i></a>
+                            <input type="number" name="revolvingdebt" placeholder="$ ##,###" class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Monthly Food Expenditure? </label>
+                            <label> Monthly Food Expenditure? </label> 
                             <p>Includes grocery, restaurants, delivery, take out and warehouse memberships.</p>
-                            <input type="number" name="food" class="form-control" required>
+                            <input type="number" name="food" placeholder="$ ##,###"  class="form-control" required>
                         </div>
 
                         <div class="form-group">
                             <label> Monthly Utilities Expenditure?</label>
                             <p>Includes electricity, water, heating fuel, cell phone plans, Wi-Fi , satellite or cable connectivity and any subscription service (NETFLIX, AppleTV, etc.)</p>
-                            <input type="number" name="utilities" class="form-control" required>
+                            <input type="number" name="utilities" placeholder="$ ##,###"  class="form-control" required>
                         </div>
 
                         <div class="form-group">
                             <label> Monthly Transportation Expenditure?</label>
                             <p>Includes gasoline, road tolls, ride-shares, public transportation, parking, snow removal, licensing, registration and car maintenance.</p>
-                            <input type="number" name="transportation" class="form-control" required>
+                            <input type="number" name="transportation" placeholder="$ ##,###"  class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label> Monthly Care/Tuition Expenditure?</label>
+                            <label> Monthly Care/Tuition Expenditure?</label> </label> <a href="#" data-bs-toggle="tooltip" title="This includes and private secondary and elementary school tuition"><i class="bi bi-info-circle-fill"></i></a>
                             <p>Includes Daycare, Eldercare, School or Course Work, Tuition and fees.</p>
-                            <input type="number" name="childcare" class="form-control" required>
+                            <input type="number" name="childcare" placeholder="$ ##,###"  class="form-control" required>
                         </div>
 
                         <div class="form-group">
                             <label> Monthly Entertainment and Vacation Expenditures </label>
-                            <input type="number" name="entertainment" class="form-control" required>
+                            <input type="number" name="entertainment" placeholder="$ ##,###" class="form-control" required>
                         </div>
 
                         <button type="submit">Submit</button>

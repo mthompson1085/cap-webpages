@@ -75,7 +75,7 @@ br
           label
             | Parent Name  
             a(href='#' data-bs-toggle='tooltip' title='Please provide the parent first and last name that will be the main contact.')
-              i.bi.bi-info-circle
+              i.bi.bi-info-circle-fill
           input.form-control(type='text' name='parentname' placeholder='First and Last Name' required='')
         .form-group
           label  Student Name 
@@ -83,7 +83,7 @@ br
         .form-group
           label  State of Residence 
           a(href='#' data-bs-toggle='tooltip' title='Please enter the state of legal residence.  Please refer to your state requirements if you have recently moved.')
-            i.bi.bi-info-circle
+            i.bi.bi-info-circle-fill
           input.form-control(type='text' name='state' required='')
         //
           <div class="form-group">
@@ -92,71 +92,71 @@ br
           </div>
         .form-group
           label  Primary Contact Email Address 
-          input.form-control(type='email' name='email' required='')
+          input.form-control(type='email' name='email' placeholder='example@email.com' required='')
         h2 Family Information 
         .form-group
           label  Age of Oldest Parent 
           a(href='#' data-bs-toggle='tooltip' title='Please enter the age of your oldest living biological or step-parent if applicable')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='oldestparent' placeholder='XX' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='oldestparent' placeholder='##' required='')
         .form-group
           label  How many people live in the household, including parents? 
           a(href='#' data-bs-toggle='tooltip' title='Include all the members of your household that the student spends the majority of time at.  This includes parents, siblings, siblings in college, and any other dependents like dependent grandparents.')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='hhsize' placeholder='XX' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='hhsize' placeholder='##' required='')
         .form-group
           label
             | How many people in the household, including the student will be in college during the 2022-2023 school year?
           a(href='#' data-bs-toggle='tooltip' title='Please do not include parents that are enrolled in college')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='numincollege' placeholder='XX' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='numincollege' placeholder='##' required='')
         .form-group
           label
             | How many people in the household, not including the student, will be enrolled during the student&apos;s projected 4 year college degree?
           a(href='#' data-bs-toggle='tooltip' title='Enter any other members of the household that are projected to attend college at the same time as this student.  For Example if they have a sibling that in a junior in High School and they are considering attending college, add them to this number.')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='overlapcollege' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='overlapcollege' placeholder='##' required='')
         h2  Family Income and Assets 
         .form-group
           label  How much did the student earn in 2020? 
           a(href='#' data-bs-toggle='tooltip' title='Include all earnings, wages, tips, and business income that the student received in 2020')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='studentincome' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='studentincome' placeholder='$ ##,###' required='')
         .form-group
           label  How much did Parent 1 earn in 2020? 
           a(href='#' data-bs-toggle='tooltip' title='Include all earnings, wages, tips, and business income that Parent 1 received in 2020')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='p1income' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='p1income' placeholder='$ ##,###' required='')
         .form-group
           label  How much did Parent 2 earn in 2020? 
           a(href='#' data-bs-toggle='tooltip' title='Include all earnings, wages, tips, and business income that Parent 2 received in 2020, If there is not a Parent 2 please enter 0')
-          i.bi.bi-info-circle
-          input.form-control(type='number' name='p2income' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='p2income' placeholder='$ ##,###' required='')
         .form-group
           label  Child Support received in 2020?
           a(href='#' data-bs-toggle='tooltip' title='Enter in all Child Support received in the household that the students spends majority of their time.')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='supportrecvd' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='supportrecvd' placeholder='$ ##,###' required='')
         .form-group
           label  Amount of Untaxed Income in 2020 Tax Year?
           a(href='#' data-bs-toggle='tooltip' title='Enter in any income received by parents that is untaxed such as Social Security payments, legal settlements, or other income received. If there is no untaxed income enter 0.')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='untaxedincome' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='untaxedincome' placeholder='$ ##,###' required='')
         .form-group
           label  Child Support Parents Paid in 2020 Tax Year? 
           a(href='#' data-bs-toggle='tooltip' title='Provide the support paid by your custodial parent')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='supportpaid' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='supportpaid' placeholder='$ ##,###' required='')
         .form-group
           label  Total Parents Cash, Checking and Savings Balance? 
           a(href='#' data-bs-toggle='tooltip' title="Provide parents' current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts.")
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='householdsavings' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='householdsavings' placeholder='$ ##,###' required='')
         .form-group
           label  Total Student Cash, Checking and Savings Balance? 
           a(href='#' data-bs-toggle='tooltip' title='Provide student current balances as of today.  Include all accounts with the exception of dedicated retirement, investment or brokerage accounts')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='studentchecking' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='studentchecking' placeholder='$ ##,###' required='')
         //
           <label>Do your Parents own a home?</label> </label> <a href="#" data-bs-toggle="tooltip" title="Indicate Yes if the household student spends majority of time is owned. This will be used for "><i class="bi bi-info-circle"></i></a>
           <div class="form-check">
@@ -178,27 +178,27 @@ br
         .form-group
           label  Total Student Investment Net Worth 
           a(href='#' data-bs-toggle='tooltip' title='Enter in the amount of investment assets that student owns.  For example balances of owned stock or value of rental properties.  If the student has none, enter 0.')
-            i.bi.bi-info-circle
+            i.bi.bi-info-circle-fill
           p If negative enter 0
-          input.form-control(type='number' name='studentinvestment' required='')
+          input.form-control(type='number' name='studentinvestment' placeholder='$ ##,###' required='')
         .form-group
           label Total Student Business / Farm Net Worth?  
           a(href='#' data-bs-toggle='tooltip' title='Enter in business value of any student owned business that has more than 100 employees.  Enter 0 if there is student does not own a buiness or farm with over 100 employees.')
-            i.bi.bi-info-circle
+            i.bi.bi-info-circle-fill
           p Applies to Businesses employing &gt;100
-          input.form-control(type='number' name='studentbusiness' required='')
+          input.form-control(type='number' name='studentbusiness' placeholder='$ ##,###' required='')
         .form-group
           label  Total Parent Investment Net Worth 
           a(href='#' data-bs-toggle='tooltip' title='Enter in the amount of investment assets that Parent owns.  For example balances of owned stock or value of rental properties.  If the Parent has none, enter 0.')
-            i.bi.bi-info-circle
+            i.bi.bi-info-circle-fill
           p If negative enter 0
-          input.form-control(type='number' name='parentinvestment' required='')
+          input.form-control(type='number' name='parentinvestment' placeholder='$ ##,###' required='')
         .form-group
           label  Total Parent Business / Farm Net Worth?  
           a(href='#' data-bs-toggle='tooltip' title='Enter in business value of any Parent owned business that has more than 100 employees.  Enter 0 if there is Parents do not own a buiness or farm with over 100 employees.')
-            i.bi.bi-info-circle
+            i.bi.bi-info-circle-fill
           p Applies to Businesses employing &gt;100
-          input.form-control(type='number' name='parentbusiness' required='')
+          input.form-control(type='number' name='parentbusiness' placeholder='$ ##,###' required='')
         h2 Family Financial Goals for 2022
         h3
           | In this section we are looking to get a better understanding of your financial goals for the upcoming year. For each of these questions we would like you to enter the amount that your familiy would like to contribute to each of the categories to gain financal secruity.  If you do not have any goals or do not contribute to these areas, you may enter 0.
@@ -208,70 +208,76 @@ br
           .form-group
             label  How much do you anticipate you will contribute monthly to your savings? 
             a(href='#' data-bs-toggle='tooltip' title="Enter the amount that you will contribute to your 'Rainy Day' fund.  It is recommended that you have atleast 3 months of salary saved if possible")
-              i.bi.bi-info-circle
+              i.bi.bi-info-circle-fill
             p How much would you like to save in 2022
-            input.form-control(type='number' name='familysavingsgoal' required='')
+            input.form-control(type='number' name='familysavingsgoal' placeholder='$ ##,###' required='')
         .form-group
           label
             | How much do you anticipate you will contribute to your retirement monthly? Please enter as a dollar amount.
           a(href='#' data-bs-toggle='tooltip' title="Enter the amount that you will contribute to IRA's, 401K's, or any other dedicated retirement account. It is recommended that you you contribute 15% of your income towards retirement")
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='parentretirementgoal' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='parentretirementgoal' placeholder='$ ##,###' required='')
         .form-group
           label  How much do you antipate you will invest monthly in 2022?
           a(href='#' data-bs-toggle='tooltip' title='Please enter the amount that you anticiapte that you will actively invest each month into stocks or any other investment tools.')
-            i.bi.bi-info-circle
+            i.bi.bi-info-circle-fill
           p Family investments in equities, real estate etc., this year
           input.form-control(type='number' name='parentinvestgoal' required='')
         .form-group
           label
             | How much do you anticipate you will contribute monthly to a college saving plan or account?
           a(href='#' data-bs-toggle='tooltip' title='Include amounts for all children in this amount')
-            i.bi.bi-info-circle
-          input.form-control(type='number' name='collegesavingsgoal' required='')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='collegesavingsgoal' placeholder='$ ##,###' required='')
         h2  Family Expenses 
         h3
-          | Please provide your monthly family expenses.  This will help give us a better sense of the expenses you have going out each month.
+          | Please provide your monthly family expenses.  This will help give us a better sense of the expenses you have going out each month. Please anser these questions based on the entire household rather than an individual.
         br
         br
         .form-group
           label  Monthly Car Payments? 
+          a(href='#' data-bs-toggle='tooltip' title='Include payment only.  Do not include gas, insurance, or any other car related expenses.  If you do not own cars or have a payment please enter 0.')
+            i.bi.bi-info-circle-fill
           p Includes Auto Lease and Loan Payments.
-          input.form-control(type='number' name='familycar' required='')
+          input.form-control(type='number' name='familycar' placeholder='$ ##,###' required='')
         .form-group
           label  Monthly Housing Costs
           p Includes Mortgage and Rent Payments.
-          input.form-control(type='number' name='familyhousing' required='')
+          input.form-control(type='number' name='familyhousing' placeholder='$ ##,###' required='')
         .form-group
           label  Monthly Insurance Premiums?
+          a(href='#' data-bs-toggle='tooltip' title='Do not include insurances that are included in your housing payments.')
+            i.bi.bi-info-circle-fill
           p Includes Medical, Home, Renters, Auto and Life Insurance, etc.
-          input.form-control(type='number' name='insurance' required='')
+          input.form-control(type='number' name='insurance' placeholder='$ ##,###' required='')
         .form-group
           label  Monthly Debt Payments?  
-          p
-            | Includes revolving or monthly payments to credit cards, personal loans, loan consolidation/repayment, Federal PLUS loans for older siblings, etc., not factored into another Family Expense category.
-          input.form-control(type='number' name='revolvingdebt' required='')
+          a(href='#' data-bs-toggle='tooltip' title='Includes revolving or monthly payments to credit cards, personal loans, loan consolidation/repayment, Federal PLUS loans for older siblings, etc., not factored into another Family Expense category.')
+            i.bi.bi-info-circle-fill
+          input.form-control(type='number' name='revolvingdebt' placeholder='$ ##,###' required='')
         .form-group
           label  Monthly Food Expenditure? 
           p Includes grocery, restaurants, delivery, take out and warehouse memberships.
-          input.form-control(type='number' name='food' required='')
+          input.form-control(type='number' name='food' placeholder='$ ##,###' required='')
         .form-group
           label  Monthly Utilities Expenditure?
           p
             | Includes electricity, water, heating fuel, cell phone plans, Wi-Fi , satellite or cable connectivity and any subscription service (NETFLIX, AppleTV, etc.)
-          input.form-control(type='number' name='utilities' required='')
+          input.form-control(type='number' name='utilities' placeholder='$ ##,###' required='')
         .form-group
           label  Monthly Transportation Expenditure?
           p
             | Includes gasoline, road tolls, ride-shares, public transportation, parking, snow removal, licensing, registration and car maintenance.
-          input.form-control(type='number' name='transportation' required='')
+          input.form-control(type='number' name='transportation' placeholder='$ ##,###' required='')
         .form-group
           label  Monthly Care/Tuition Expenditure?
+          a(href='#' data-bs-toggle='tooltip' title='This includes and private secondary and elementary school tuition')
+            i.bi.bi-info-circle-fill
           p Includes Daycare, Eldercare, School or Course Work, Tuition and fees.
-          input.form-control(type='number' name='childcare' required='')
+          input.form-control(type='number' name='childcare' placeholder='$ ##,###' required='')
         .form-group
           label  Monthly Entertainment and Vacation Expenditures 
-          input.form-control(type='number' name='entertainment' required='')
+          input.form-control(type='number' name='entertainment' placeholder='$ ##,###' required='')
         button(type='submit') Submit
         script.
           $(document).ready(function(){
