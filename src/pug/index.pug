@@ -1,6 +1,5 @@
 doctype html
-html(lang="en")
-  head
+head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
   meta(name='description' content='')
@@ -35,19 +34,17 @@ nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
     #navbarResponsive.collapse.navbar-collapse
       ul.navbar-nav.ml-auto.my-2.my-lg-0
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='index') Home
+          a.nav-link.js-scroll-trigger(href='index.html') Home
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='services') Services
+          a.nav-link.js-scroll-trigger(href='services.html') Services
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='about') About
+          a.nav-link.js-scroll-trigger(href='about.html') About
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='events') Events
+          a.nav-link.js-scroll-trigger(href='events.html') Events
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='video') Video Tutorial
+          a.nav-link.js-scroll-trigger(href='video.html') Video Tutorial
         li.nav-item
-          a.nav-link.js-scroll-trigger(href='contact') Contact
-        li.nav-item
-          a.nav-link.js-scroll-trigger(href='capform') Cap Assessment
+          a.nav-link.js-scroll-trigger(href='contact.html') Contact
 // Masthead
 header.masthead
   .container.h-100
@@ -58,6 +55,16 @@ header.masthead
       .col-lg-8.align-self-baseline
         p.text-white-75.font-weight-light.mb-5 Let College CAP help you determine college affordability!
         a.btn.btn-primary.btn-xl.js-scroll-trigger(href='contact.html') Find Out More
+section.page-section.webinar
+  .container.text-center.webwhite
+    h2.webwhite Want to Learn More?
+    p.webwhite Watch this short video to learn more about how College Cap can help!
+    br
+    video.webpromo(src='../src/assets/img/portfolio/fullsize/Sample.mp4' controls='')  Your browser does not support the video tag.
+    br
+    br
+    br
+    a.btn.btn-light.btn-xl(href='contact.html') Ready to Work With Us?  Click Here!
 // About
 section#about.page-section.bg-primary
   .container
@@ -101,17 +108,6 @@ section#services.page-section
           h3.h4.mb-2 Personalized Meetings
           p.text-muted.mb-0 One on One meetings designed for you and your family&apos;s situation.
 // Call to action
-section.page-section.webinar
-  .container.text-center.webwhite
-    h2.webwhite Want to Learn More? 
-    p.webwhite
-      | We offer free video tutorials to help you understand the process better.  We recommend you check back regulary as we are always adding topics to our library.  We promise you won&apos;t get this information anywhere else and is provided by actual experts with years of financial aid expereince.
-    br
-    img.webpromo(src='assets/img/portfolio/fullsize/webpromo.jpg' alt='')
-    br
-    br
-    br
-    a.btn.btn-light.btn-xl(href='contact.html') Watch Now!
 // Portfolio
 h2.text-center.mt-0 Our Guiding Principles
 hr.divider.my-4
@@ -159,7 +155,7 @@ hr.divider.my-4
   // Footer
   footer.bg-light.py-5
     .container
-      .small.text-center.text-muted Copyright &copy; 2022 - College CAP
+      .small.text-center.text-muted Copyright &copy; 2020 - College CAP
   // Bootstrap core JS
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
   script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
